@@ -1,16 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.1d72a60d.js",
+    "main.css": "/portfolio/static/css/main.3f6e23bb.css",
+    "main.js": "/portfolio/static/js/main.bc63df06.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/tsi-labs-4.png": "/portfolio/static/media/tsi-labs-4.d4d8d09f850614bab3ba.png",
+    "static/media/cs-5.png": "/portfolio/static/media/cs-5.56fd2ce7d1849e427d22.png",
+    "static/media/cs-4.png": "/portfolio/static/media/cs-4.8db52a0ca84f53bb600b.png",
+    "static/media/tsi-labs-6.png": "/portfolio/static/media/tsi-labs-6.8a99101a1f7458eeb380.png",
+    "static/media/bkap-1.png": "/portfolio/static/media/bkap-1.f696f0d5271b11f8d906.png",
+    "static/media/cs-2.png": "/portfolio/static/media/cs-2.104923f4a5778c1be5ea.png",
+    "static/media/bkap-2.png": "/portfolio/static/media/bkap-2.1b693d214e86f7fc6b6d.png",
+    "static/media/cs-3.png": "/portfolio/static/media/cs-3.9c14b936347d51d735a0.png",
+    "static/media/cs-1.png": "/portfolio/static/media/cs-1.2919d6cedda2b05753d9.png",
+    "static/media/bkap-4.png": "/portfolio/static/media/bkap-4.5c215b26b8af65f0a255.png",
+    "static/media/bkap-3.png": "/portfolio/static/media/bkap-3.d51ace2e32d3e56d1796.png",
+    "static/media/tsi-labs-5.png": "/portfolio/static/media/tsi-labs-5.e16c69c9b52cc0256b63.png",
+    "static/media/tsi-labs-2.png": "/portfolio/static/media/tsi-labs-2.cf937c0ff627b26347dd.png",
+    "static/media/tsi-labs-3.png": "/portfolio/static/media/tsi-labs-3.eaf3f1fdc6a548ce84ac.png",
+    "static/media/tsi-labs-1.png": "/portfolio/static/media/tsi-labs-1.f847b320ab519d0e5db8.png",
     "index.html": "/portfolio/index.html",
-    "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.1d72a60d.js.map": "/portfolio/static/js/main.1d72a60d.js.map",
+    "main.3f6e23bb.css.map": "/portfolio/static/css/main.3f6e23bb.css.map",
+    "main.bc63df06.js.map": "/portfolio/static/js/main.bc63df06.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.1d72a60d.js"
+    "static/css/main.3f6e23bb.css",
+    "static/js/main.bc63df06.js"
   ]
 }
