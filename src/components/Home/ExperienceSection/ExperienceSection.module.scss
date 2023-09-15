@@ -1,6 +1,9 @@
 @import '../../../styles/variable.scss';
 
 .experienceSectionContainer {
+	border-top: 1px solid $sectionBorder;
+	padding-top: 25px;
+
 	.experienceAndSkillsSection {
 		display: flex;
 		flex-direction: row;
@@ -20,12 +23,12 @@
 			}
 
 			.experienceList {
-				margin-top: 20px;
+				margin-top: 5px;
 				display: flex;
 				flex-direction: column;
 
 				.experienceItem {
-					padding: 15px;
+					padding: 30px 15px;
 					cursor: pointer;
 					transition: all .5s ease;
 
@@ -129,6 +132,10 @@
 			position: sticky;
 			top: 60px;
 			overflow-y: auto;
+
+			@media ((min-width: 1920px) and (min-height: 1080px)) {
+				height: 850px;	
+			}
 
 			@media (max-width: $_md) {
 				width: 150px;

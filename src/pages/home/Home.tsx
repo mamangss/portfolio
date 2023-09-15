@@ -207,11 +207,11 @@ const Home: React.FC = () => {
 					label: 'Joshua Mamangun',
 					url: 'https://www.linkedin.com/in/joshua-mamangun'
 				},
-				{
-					type: 'WEBSITE',
-					label: 'Portfolio',
-					url: 'https://mamangss.github.io/portfolio/'
-				},
+				// {
+				// 	type: 'WEBSITE',
+				// 	label: 'Portfolio',
+				// 	url: 'https://mamangss.github.io/portfolio/'
+				// },
 			]
 		}
 	};
@@ -221,7 +221,7 @@ const Home: React.FC = () => {
 			<div className={styles.homeContent}>
 
 				<HeroSection data={data.heroSectionData} />
-				<ProjectsSection data={data.projectsSectionData} />
+				{/* <ProjectsSection data={data.projectsSectionData} /> */}
 				<ExperienceSection data={data.experienceSectionData} />
 				<ContactSection data={data.contactSectionData} />
 
