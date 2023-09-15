@@ -1,0 +1,96 @@
+@import '../../../styles/variable.scss';
+
+.projectsSectionContainer {
+	background-color: $coloredSectionBG;
+
+	.projectsSectionContent {
+		padding: 30px 0;
+		z-index: 1;
+	
+		.headingCaption {
+			background-color: $sectionHeadingCaptionBG;
+			text-align: center;
+			position: sticky;
+			top: 60px;
+			z-index: 2;
+		}
+	
+		.projectList {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 40px;
+			justify-content: center;
+			z-index: 1;
+	
+			.projectItem {
+				.projectCard {
+					width: 350px;
+					height: 225px;
+					max-width: 350px;
+					max-height: 225px;
+					z-index: 1;
+					position: relative;
+					cursor: pointer;
+	
+					&:hover {
+						.projectImage {
+							.image {
+								height: 195px;
+							}
+	
+							.name {
+								font-weight: 600;
+								color: $primary;
+								background-color: $workCardHoveredBG;
+							}
+						}
+					}
+	
+					.projectImage {
+						position: relative;
+						z-index: 2;
+						background-color: $white;
+	
+						.name {
+							padding: 10px;
+							position: absolute;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							background-color: $workCardBG;
+							border-radius: 6px;
+							display: flex;
+							align-items: flex-end;
+							justify-content: center;
+	
+							font-size: 18px;
+							color: $whiteText;
+							transition: all .5s ease;
+						}
+	
+						.image {
+							width: 350px;
+							height: 225px;
+							object-fit: cover;
+							object-position: top center;
+							border-radius: 6px;
+							transition: all .5s ease;
+						}
+					}
+	
+					.description {
+						z-index: 1;
+						position: absolute;
+						bottom: 0;
+						width: 350px;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+}

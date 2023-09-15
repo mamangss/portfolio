@@ -1,0 +1,51 @@
+@import '../../styles/variable.scss';
+
+.layoutContent {
+	z-index: 1;
+
+	.topNav {
+		height: 60px;
+		background-color: $white;
+		position: sticky;
+		top: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		z-index: 2;
+
+		.menuList {
+			display: flex;
+			flex-direction: row;
+			column-gap: 30px;
+			padding: 0;
+
+			.menuItem {
+				font-family: $headingFont;
+				font-weight: 400;
+				font-size: 24px;
+				color: $blackText;
+				cursor: pointer;
+
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.mainContent {
+		z-index: 1;
+	}
+
+	.footerSection {
+		padding: 5px;
+		background-color: $primary;
+
+		.footerContent {
+			text-align: center;
+			font-size: 14px;
+			color: $whiteText;
+		}
+	}
+}

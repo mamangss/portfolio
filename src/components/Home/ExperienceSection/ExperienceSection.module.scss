@@ -1,0 +1,200 @@
+@import '../../../styles/variable.scss';
+
+.experienceSectionContainer {
+	.experienceAndSkillsSection {
+		display: flex;
+		flex-direction: row;
+		column-gap: 40px;
+		padding: 30px 0;
+
+		@media (max-width: $_se) {
+			flex-direction: column;
+			row-gap: 40px;
+		}
+
+		.experienceSection {
+			flex-grow: 1;
+
+			&>.headingCaption {
+				padding-left: 15px;
+			}
+
+			.experienceList {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: column;
+
+				.experienceItem {
+					padding: 15px;
+					cursor: pointer;
+					transition: all .5s ease;
+
+					&:not(:last-child) {
+						border-bottom: 1px solid $primary;
+					}
+
+					&.selected {
+						border-radius: 6px;
+						background-color: $selectedExperienceBG;
+
+						.headingCaption {
+							background-color: transparent;
+						}
+					}
+
+					.headingCaption {
+						font-weight: 600;
+						font-size: 18px;
+						color: $secondary;
+						position: sticky;
+						top: 60px;
+						background-color: $white;
+						transition: all .5s ease;
+					}
+
+					.subCaption {
+						font-size: 15px;
+					}
+
+					.date {
+						color: $dateText;
+						font-size: 15px;
+					}
+
+					.descriptionList {
+						padding-left: 20px;
+						margin-top: 10px;
+						list-style-type: disc;
+					}
+
+					.positionList {
+						margin-top: 15px;
+						padding-left: 30px;
+						display: flex;
+						flex-direction: column;
+						row-gap: 15px;
+
+						.positionItem {
+							position: relative;
+							z-index: 1;
+
+							&::before {
+								content: '';
+								position: absolute;
+								top: 6px;
+								left: -23px;
+								width: 10px;
+								height: 10px;
+								border-radius: 100%;
+								background-color: $timelineDot;
+								z-index: 2;
+							}
+
+							&:first-child {
+								&::before {
+									background-color: $primary;
+									width: 12px;
+									height: 12px;
+									left: -24px;
+								}
+							}
+
+							&:not(:last-child) {
+								&::after {
+									content: '';
+									position: absolute;
+									top: 10px;
+									left: -19px;
+									width: 2px;
+									height: calc(100% + 15px);
+									background-color: $timelineLine;
+									z-index: 1;
+								}
+							}
+
+							.position {
+								font-weight: 600;
+								color: $primary;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.skillsSection {
+			width: 250px;
+			min-width: 250px;
+			height: calc(100vh - 60px);
+			position: sticky;
+			top: 60px;
+			overflow-y: auto;
+
+			@media (max-width: $_md) {
+				width: 150px;
+				min-width: 150px;
+			}
+
+			@media (max-width: $_se) {
+				height: auto;
+				position: relative;
+				top: 0;
+				width: 100%;
+				min-width: none;
+			}
+
+			.skillList {
+				margin-top: 20px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 15px;
+
+				.skillItem {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+
+					&.unselected {
+						.name {
+							background-color: $unselectedSkillNameBG;
+						}
+
+						.description {
+							background-color: $unsellectedSkillDescBG;
+						}
+					}
+
+					.name,
+					.description {
+						color: $whiteText;
+						height: 37px;
+					}
+
+					.name {
+						max-width: 100px;
+						padding: 8px;
+						background-color: $primary;
+						border-radius: 6px 0 0 6px;
+						font-size: 14px;
+						transition: all .5s ease;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+					}
+
+					.description {
+						padding: 8px;
+						background-color: $accent2;
+						border-radius: 0 6px 6px 0;
+						font-size: 12px;
+						display: flex;
+						align-items: center;
+						transition: all .5s ease;
+						line-height: 12px;
+					}
+				}
+			}
+		}
+	}
+}

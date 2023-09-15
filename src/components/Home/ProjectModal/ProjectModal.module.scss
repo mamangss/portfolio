@@ -1,0 +1,129 @@
+@import '../../../styles/variable.scss';
+
+.modalContainer {
+	height: 100vh;
+	width: 100vw;
+	padding: 40px;
+	z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $modalContainerBG;
+	cursor: not-allowed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&.open {
+		display: none;
+	}
+
+	.modal {
+		width: 1200px;
+		max-width: calc(100vw - 80px);
+		height: auto;
+		max-height: calc(100vh - 80px);
+		cursor: auto;
+		background-color: $modalBG;
+		border-radius: 6px;
+		transition: all .5s ease;
+
+		.header {
+			padding: 16px 24px;
+			border-bottom: 2px solid $modalBorder;
+			display: flex;
+			flex-direction: row;
+			row-gap: 30px;
+			align-items: center;
+
+			.name {
+				font-family: $headingFont;
+				font-size: 30px;
+				flex-grow: 1;
+			}
+
+			.closeBtn {
+				font-family: $headingFont;
+				font-size: 22px;
+				color: $close;
+			}
+		}
+
+		.body {
+			height: auto;
+			max-height: calc(100vh - 160px);
+			padding: 24px;
+			overflow: auto;
+
+			@media (max-width: $_se) {
+				height: 400px;
+			}
+
+			.detailsSection {
+				display: flex;
+				flex-direction: column;
+				row-gap: 15px;
+				
+				.detailRow {
+					display: flex;
+					flex-direction: row;
+					column-gap: 30px;
+
+					@media (max-width: $_se) {
+						flex-direction: column;
+						row-gap: 15px;
+					}
+
+					.label {
+						min-width: 125px;
+						font-weight: 600;
+					}
+
+					.value {
+						flex-grow: 1;
+
+						.techStackList {
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							column-gap: 10px;
+							row-gap: 10px;
+							
+							.techStackItem {
+								padding: 2px 8px;
+								background-color: $secondary;
+								border-radius: 6px;
+								font-size: 14px;
+								color: $whiteText;
+							}
+						}
+					}
+				}
+			}
+
+			.mediaList {
+				margin-top: 30px;
+				column-count: 2;
+
+				@media (max-width: $_md) {
+					column-count: 1;
+				}
+
+				.mediaItem {
+					margin-bottom: 20px;
+					break-inside: avoid;
+					width: 100%;
+
+					.image {
+						width: 100%;
+						object-fit: cover;
+						object-position: center;
+						border-radius: 6px;
+						border: 1px solid $imageBorder;
+					}
+				}
+			}
+		}
+	}
+}

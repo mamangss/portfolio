@@ -1,0 +1,104 @@
+@import '../../../styles/variable.scss';
+
+.contactSectionContainer {
+	background-color: $coloredSectionBG;
+
+	.contactSectionContent {
+		padding: 30px 0;
+
+		.headingCaption {
+			text-align: center;
+		}
+
+		.form {
+			width: 100%;
+			max-width: 500px;
+			margin: 30px auto 0;
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+
+			.inputField,
+			.textareaField {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				column-gap: 20px;
+
+				.label {
+					width: 100px;
+				}
+
+				.input {
+					flex-grow: 1;
+					border: 1px solid $inputBorder;
+					border-radius: 6px;
+					padding: 4px 8px;
+
+					&:focus {
+						outline: none;
+						border: 1px solid $focusedInputBorder;
+					}
+				}
+			}
+
+			.errorMessage {
+				text-align: center;
+				color: $error;
+			}
+
+			.submitBtn {
+				margin: 0 auto;
+				padding: 4px 8px;
+				background-color: $primary;
+				border-radius: 6px;
+				color: $whiteText;
+				width: 200px;
+
+				&:hover {
+					background-color: $secondary;
+				}
+			}
+		}
+
+		.successMessage {
+			padding: 40px 15px 15px 15px;
+			font-weight: 600;
+			text-align: center;
+			color: $success;
+		}
+
+		.linkList {
+			width: 100%;
+			max-width: 800px;
+			margin: 60px auto 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			column-gap: 30px;
+			row-gap: 20px;
+			justify-content: center;
+
+			.linkItem {
+				.link {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					column-gap: 8px;
+
+					.icon {
+
+					}
+
+					.label {
+						font-size: 14px;
+
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
