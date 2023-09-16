@@ -57,9 +57,13 @@ const Home: React.FC = () => {
 									to: 'Present'
 								},
 								descriptionList: [
-									'Develop web pages based from UI/UX designs and integrate backend APIs for functionality using NextJs, SCSS, and Tailwind.',
+									'Develop web pages based on UI/UX designs in Figma using Next.js, SCSS, and Tailwind CSS, ensuring mobile responsiveness.',
+									'Integrate backend APIs and third-party APIs, such as Stripe, for website functionality.',
 									'Create reusable components and customize pre-built elements like AntDesign.',
-									'Collaborate and communicate with fellow frontend web developers and the project team.'
+									'Assist other team members in fixing return QAs in AngularJS, Next.js, and SCSS.',
+									'Collaborate and communicate with fellow frontend web developers, backend developers, UI/UX designers, QA analysts, and the project team.',
+									'Develop mobile-responsive marketing sites with animations, transitions, and customized content.',
+									'Lead the web frontend part of a project involving CMS, App, and Marketing.',
 								],
 								skillList: [
 									'Next.js',
@@ -83,8 +87,10 @@ const Home: React.FC = () => {
 									to: 'Apr 2023'
 								},
 								descriptionList: [
-									'Create database design and restful APIs using Laravel and MySQL.',
-									'Implement UI/UX design and integrate APIs using VueJS',
+									'Implement UI/UX designs from Figma and Adobe XD using Vue.js and Vuetify.',
+									'Design a database and create RESTful APIs using Laravel and MySQL.',
+									'Develop a dynamic content website using WordPress and customize its page styles.',
+									'Collaborate and communicate with frontend web and mobile developers for API, UI/UX designer, and the project team.',
 								],
 								skillList: [
 									'Next.js',
@@ -115,10 +121,13 @@ const Home: React.FC = () => {
 									to: 'Dec 2021'
 								},
 								descriptionList: [
-									'Create database design and APIs using Laravel and MySQL.',
-									'Implement UI/UX design and integrate APIs using VueJS',
-									'Present and talk with the respective users to identify needed process and improvement.',
-									'Collaborate and communicate with the team.'
+									'Design a database and create RESTful APIs using Laravel and MySQL.',
+									'Implement UI/UX design and integrate APIs using Vue.js and Vuetify.',
+									'Present and engage with respective users to identify necessary processes and improvements.',
+									'Collaborate and communicate effectively with the team.',
+									'Create a dynamic question and answer module with various types, timers, randomized choices, and tab-switching tracking.',
+									'Generate statistics through query result export and Laravel API.',
+									'Clean, organize, and create an automated function for initializing data through CSV import.',
 								],
 								skillList: [
 									'Vue.js',
@@ -145,9 +154,9 @@ const Home: React.FC = () => {
 									to: 'Jul 2020'
 								},
 								descriptionList: [
-									'Develop School Management System from both frontend and backend with the team and helps other project module using CodeIgniter, JQuery, MySQL, CSS, and Github.',
-									'Implement spot on discussed design for the module based on the requirements.',
-									'Helps to facilitate system\'s demo and production.'
+									'Develop a School Management System from both the frontend and backend with the team, and assist with other project modules using CodeIgniter, jQuery, MySQL, CSS, and GitHub.',
+									'Implement the discussed design for the module, based on the requirements.',
+									'Assist in facilitating system demos and production.',
 								],
 								skillList: [
 									'Vue.js',
@@ -213,7 +222,7 @@ const Home: React.FC = () => {
 				// 	url: 'https://mamangss.github.io/portfolio/'
 				// },
 			]
-		}
+		}	
 	};
 
 	return (
