@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 						companyName: 'TechEdge Solutions Inc.',
 						positionList: [
 							{
-								position: 'Junior Application Developer',
+								position: 'Frontend Web Developer',
 								employmentType: 'Full-time',
 								date: {
 									from: 'Apr 2023',
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
 						companyName: 'City of Malabon University',
 						positionList: [
 							{
-								position: 'Back-end Programmer',
+								position: 'Full-stack Web Developer',
 								employmentType: 'Contract',
 								date: {
 									from: 'Feb 2021',
